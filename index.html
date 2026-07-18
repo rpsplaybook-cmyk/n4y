@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nails For You – Richmond Hill</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-btn" onclick="toggleMenu()">✕</button>
+  <a href="#about" onclick="toggleMenu()">About Us</a>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#drinks" onclick="toggleMenu()">Complimentary</a>
+  <!-- <a href="#gift" onclick="toggleMenu()">Gift Cards</a> -->
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="#location" onclick="toggleMenu()">Contact</a>
+  <a href="#" class="cta-primary" style="margin-top:8px;" onclick="toggleMenu()">Book Now</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <a href="#" class="logo" style="text-decoration:none;">
+    Nails For You
+    <span>Richmond Hill</span>
+  </a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#drinks">Complimentary</a>
+    <!-- <a href="#gift">Gift Cards</a> -->
+    <a href="#faq">FAQ</a>
+    <a href="#location">Contact</a>
+    <a href="#" class="btn-book">Book Now</a>
+  </nav>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <p class="hero-eyebrow">Richmond Hill's Premier Nail & Spa Studio</p>
+  <h1>Nails For <em>You</em></h1>
+  <p class="hero-sub">Where Beauty Shines · Richmond Hill, ON</p>
+  <div class="hero-actions">
+    <a href="#" class="cta-primary">Book Now</a>
+    <a href="#services" class="cta-secondary">Our Services</a>
+  </div>
+
+  <!-- Gift Card on first screen (hidden for now — re-enable by uncommenting)
+  <div class="gift-hero">
+    <div class="gift-hero-inner">
+      <div class="gift-hero-stripe"></div>
+      <div class="gift-hero-content">
+        <div class="gift-card-mini">
+          <div class="gift-card-mini-shine"></div>
+        </div>
+        <div class="gift-hero-text">
+          <span class="gift-hero-label">Exclusive Gift</span>
+          <h3>Give the Gift of <em>Pure Indulgence</em></h3>
+          <p>Redeemable for any service · Never expires</p>
+        </div>
+        <div class="gift-hero-cta">
+          <a href="#gift">Gift Cards &nbsp;→</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title">A sanctuary for <em>beauty & wellness</em></h2>
+        <div class="divider"></div>
+        <div class="about-body">
+          <p>Welcome to <strong>Nails For You</strong> — Richmond Hill's go-to destination for premium nail care and rejuvenating spa services. Nestled in the heart of the community, our studio offers a clean, modern, and warmly inviting environment where every visit is designed to help you unwind, refresh, and leave feeling beautifully confident.</p>
+          <p>Our skilled team of certified nail technicians and spa specialists are passionate about delivering personalized, high-quality services tailored to your unique needs. From classic manicures to luxurious spa treatments, we bring artistry and care to every appointment.</p>
+          <p>We believe that self-care is a necessity, not a luxury — and we're here to make it accessible, exceptional, and joyful for every guest who walks through our doors.</p>
+        </div>
+      </div>
+      <div class="about-img-stack">
+        <!-- CHANGED FROM DIVS WITH EMOJIS TO IMG TAGS -->
+        <img src="nails1.png" alt="Nail artistry example" class="img-back">
+        <img src="nails2.png" alt="Luxurious spa experience" class="img-front">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <span class="section-label">What We Offer</span>
+    <h2 class="section-title">Our <em>Services</em></h2>
+    <div class="divider"></div>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-num">01</span>
+        <div class="service-icon">💅</div>
+        <h3>Manicure</h3>
+        <p>Classic, gel, dip powder, and nail art manicures tailored to your style and preference. We shape, buff, and perfect every nail.</p>
+        <span class="price">Starting from $35</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">02</span>
+        <div class="service-icon">🦶</div>
+        <h3>Pedicure</h3>
+        <p>Indulge in our luxurious pedicure services — from basic to spa-grade treatments with exfoliation, massage, and polish.</p>
+        <span class="price">Starting from $45</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">03</span>
+        <div class="service-icon">✨</div>
+        <h3>Gel & Acrylic</h3>
+        <p>Long-lasting gel and acrylic enhancements with a wide range of colors and designs. Built for durability and beauty.</p>
+        <span class="price">Starting from $55</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">04</span>
+        <div class="service-icon">💆</div>
+        <h3>Head Spa</h3>
+        <p>A deeply relaxing scalp treatment combining massage, cleansing, and nourishment for your hair and mind.</p>
+        <span class="price">Starting from $80</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">05</span>
+        <div class="service-icon">🌿</div>
+        <h3>Spa Treatments</h3>
+        <p>Rejuvenate with our range of body and skin spa treatments — designed to restore, hydrate, and revitalize.</p>
+        <span class="price">Starting from $65</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">06</span>
+        <div class="service-icon">🎨</div>
+        <h3>Nail Art</h3>
+        <p>Express yourself with custom nail art created by our talented artists — from minimalist designs to bold, intricate patterns.</p>
+        <span class="price">Starting from $20</span>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="#" class="cta-primary">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIMENTARY DRINKS -->
+<section class="drinks" id="drinks">
+  <div class="container">
+    <span class="section-label">On Us</span>
+    <h2 class="section-title">Complimentary <em>Drinks</em></h2>
+    <div class="divider"></div>
+    <p class="drinks-intro">Enjoy a curated selection of complimentary beverages during your visit — because your comfort is our quiet luxury.</p>
+    <div class="drinks-grid">
+      <div class="drink-cat">
+        <span class="drink-cat-icon">☕</span>
+        <h4>Coffee</h4>
+        <span class="drink-cat-rule"></span>
+        <ul>
+          <li>Black Coffee</li>
+          <li>Latte</li>
+          <li>Cappuccino</li>
+        </ul>
+      </div>
+      <div class="drink-cat">
+        <span class="drink-cat-icon">🍵</span>
+        <h4>Tea</h4>
+        <span class="drink-cat-rule"></span>
+        <ul>
+          <li>Peppermint</li>
+          <li>Jasmine</li>
+          <li>Chamomile</li>
+          <li>Rose Tea</li>
+        </ul>
+      </div>
+      <div class="drink-cat">
+        <span class="drink-cat-icon">🧃</span>
+        <h4>Juice &amp; Water</h4>
+        <span class="drink-cat-rule"></span>
+        <ul>
+          <li>Orange Juice</li>
+          <li>Cranberry Juice</li>
+          <li>Flat Water</li>
+          <li>Detox Lemon Water</li>
+        </ul>
+      </div>
+      <div class="drink-cat">
+        <span class="drink-cat-icon">🌸</span>
+        <h4>Seasonal</h4>
+        <span class="drink-cat-rule"></span>
+        <ul>
+          <li>Hot Chocolate</li>
+          <li>Peach Soda</li>
+          <li>Strawberry Soda</li>
+        </ul>
+      </div>
+    </div>
+    <p class="drinks-ornament">Complimentary with every visit</p>
+  </div>
+</section>
+
+<!-- GIFT CARDS (hidden for now — re-enable by uncommenting)
+<section class="gift-section" id="gift">
+  <div class="container">
+    <div class="gift-section-inner">
+      <div class="gift-card-scene">
+        <div class="gift-card-visual">
+          <div class="gift-card-inner">
+            <div>
+              <div class="gift-card-top-label">Gift Card</div>
+              <div class="gift-card-logo">Nails For You<br>Richmond Hill</div>
+            </div>
+            <div class="gift-card-bottom">
+              <span class="gift-card-tagline">A gift of beauty &amp; relaxation</span>
+              <span class="gift-card-ornament">✦✦</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gift-section-text">
+        <span class="section-label">Perfect Present</span>
+        <h2>Give the gift of <em>pure indulgence</em></h2>
+        <div class="gift-section-divider"></div>
+        <p>Whether it's a birthday, anniversary, or just because — a Nails For You gift card is the perfect way to treat someone you love. Redeemable for any service at our Richmond Hill studio.</p>
+        <p class="gift-fine">Available in any amount. Never expires. Always appreciated.</p>
+        <a href="#" class="cta-gift">Purchase a Gift Card</a>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <span class="section-label">Got Questions?</span>
+    <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+    <div class="divider"></div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do I need an appointment, or do you accept walk-ins?
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">We welcome both appointments and walk-ins. However, we strongly recommend booking in advance to secure your preferred time slot, especially on weekends. You can book online anytime through our website.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How long do gel nails or acrylics typically last?
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">Gel nails generally last 2–3 weeks, while acrylics can last 3–4 weeks with proper care. We recommend scheduling a fill every 2–3 weeks to keep your nails looking fresh and beautiful.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What is your cancellation policy?
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">We kindly ask for at least 24 hours notice if you need to cancel or reschedule your appointment. Late cancellations or no-shows may be subject to a service fee to respect our team's time.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you offer services for children?
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">Yes! We offer child-friendly nail services for kids. Children under 12 must be accompanied by an adult. Please let us know when booking so we can prepare appropriately.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Are your products safe and non-toxic?
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">Absolutely. We use high-quality, salon-grade products that meet safety standards. We carry a range of low-odour and vegan-friendly options. Please inform us of any allergies or sensitivities before your appointment.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How do gift cards work?
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">Our gift cards are available for purchase online or in-studio in any denomination. They can be redeemed for any service and never expire. They make a wonderful gift for any occasion!</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What payment methods do you accept?
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">We accept all major credit and debit cards, cash, and gift cards. Contactless payment is available for your convenience.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Is there a service guarantee?
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">Yes. If you experience any issues with your service, please contact us within 24 hours and schedule a follow-up within 7 days. We're happy to make it right. Please note that all services are non-refundable, but minor fixes are complimentary within this window.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <span class="section-label">Kind Words</span>
+    <h2 class="section-title">What Our <em>Clients Say</em></h2>
+    <div class="divider"></div>
+    <div class="testi-grid">
+     <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"I’ve been going to Nails for You for YEARS and bring my girls here too. Joanne and the team have always given us exceptional service EVERY TIME!! They are ABSOLUTELY AMAZING!! ⭐️⭐️⭐️⭐️⭐️"</p>
+        <div class="testi-author">— Brenda</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Amazing salon!! Joanne and the staff do an amazing job as well as being very nice and friendly! They do nails exceptionally well and I always have a smile on my face when i leave! Will continue to come here for a long time and encourage you guys as well."</p>
+        <div class="testi-author">— Gabby</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"So friendly, precise and kind! Joanne did my mani shellac french and she was so precise, paid attention to detail, and was patient. I looove my nails now. My mom’s also very happy with her nails.
+Thank you so much and we will come back again for sure!"</p>
+        <div class="testi-author">— Yegane</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION / CONTACT -->
+<section class="location-section" id="location">
+  <div class="container">
+    <div class="location-grid">
+      <div class="location-info">
+        <span class="section-label">Find Us</span>
+        <h2 class="section-title">Come <em>Visit Us</em></h2>
+        <div class="divider"></div>
+        <div class="location-detail">
+          <div class="loc-row">
+            <span class="loc-icon">📍</span>
+            <div class="loc-text">
+              <strong>Address</strong>
+              <span>10850 Yonge St #3, Richmond Hill, ON L4C 3E4</span>
+            </div>
+          </div>
+          <div class="loc-row">
+            <span class="loc-icon">📞</span>
+            <div class="loc-text">
+              <strong>Phone</strong>
+              <span><a href="tel:++19052375776" style="color:var(--warm-taupe);text-decoration:none;">(905) 237-5776</a></span>
+            </div>
+          </div>
+          <div class="loc-row">
+            <span class="loc-icon">🕐</span>
+            <div class="loc-text">
+              <strong>Hours</strong>
+              <div class="hours-grid">
+                <span>Mon – Fri</span><span>9:30am – 7:30pm</span>
+                <span>Saturday</span><span>9:30am – 6:00pm</span>
+                <span>Sunday</span><span>10:00am – 5:00pm</span>
+              </div>
+            </div>
+          </div>
+          <div class="loc-row">
+            <span class="loc-icon">✉️</span>
+            <div class="loc-text">
+              <strong>Email</strong>
+              <span>hello@nailsforyourichmond.ca</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="cta-primary" style="margin-top:32px;display:inline-block;">Book Now</a>
+      </div>
+
+      <!-- Clickable Google Maps image -->
+      <a class="location-map-link"
+         href="https://www.google.com/maps/search/Nails+For+You+Richmond+Hill+ON"
+         target="_blank"
+         rel="noopener"
+         title="Open in Google Maps">
+        <iframe
+          title="Nails For You Richmond Hill Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.2616144496537!2d-79.4429217!3d43.8918481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2a6a06941109%3A0x1088cd799997a8da!2sNails%20For%20You!5e0!3m2!1sen!2sca!4v1777490328126!5m2!1sen!2sca"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-overlay">
+          <span>📍 View on Google Maps →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Nails For You</h3>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.1em;color:var(--accent);margin-top:4px;">Richmond Hill</p>
+      <p style="margin-top:16px;">Where beauty shines. Your local destination for premium nail care and spa services in Richmond Hill, Ontario.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <!-- <a href="#gift">Gift Cards</a> -->
+      <a href="#faq">FAQ</a>
+      <a href="#location">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Policies</h4>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Booking Policy</a>
+      <a href="#" class="cta-secondary">Book Now</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Nails For You Richmond Hill. All Rights Reserved.</span>
+    <span>Richmond Hill, Ontario, Canada</span>
+  </div>
+</footer>
+
+<!-- STICKY BOTTOM BAR (mobile) -->
+<div class="sticky-bar">
+  <a href="tel:+19051234567" class="s-call">📞 Call</a>
+  <a href="#" class="s-book">Book Now</a>
+  <!-- <a href="#gift" class="s-gift">🎁 Gift Card</a> -->
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
